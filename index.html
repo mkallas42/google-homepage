@@ -2,14 +2,71 @@
 <html>
 
 <head>
-
     <meta charset="utf-8">
     <title>Google Homepage</title>
 
 <style>
 body {
-font-family: Arial, sans-serif;
+font-family: arial,sans-serif;
 background-color: whitesmoke;
+}
+
+.gmail-link, .images-link {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+    display: inline-block;
+    line-height: 24px;
+    outline: none;
+    vertical-align: middle;
+}
+
+.header-container {
+    min-width: 165px;
+    padding: 0px 30px;
+    margin: 15px;
+    word-spacing: 15px;
+    position: relative;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 13px;
+}
+
+a:hover {
+cursor: pointer;
+text-decoration: underline;
+}
+
+.apps-button {
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.apps-button:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.signin-button {
+    border: 1px solid #4285f4;
+    color: whitesmoke;
+    font-weight: bold;
+    outline: none;
+    background-color: #4285f4;
+    text-align: center;
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+    word-spacing: 0px;
+}
+
+.signin-button:hover {
+    text-decoration: none;
+    opacity: 0.7;
 }
 
 </style>
@@ -18,12 +75,12 @@ background-color: whitesmoke;
 
 <body>
 
-    <header>
+    <header class="header-container">
         <div>
-            <a href="">Gmail</a>
-            <a href="">Images</a>
-            <img src="Images/google_apps.png" alt="Google apps" height="16px" width="16px">
-            <button>Sign in</button>
+            <a class="gmail-link" href="">Gmail</a>
+            <a class="images-link" href="">Images</a>
+            <a class="apps-button"><img src="Images/google_apps.png" alt="Google apps" title="Google apps" role="button" height="20px" width="20px"></a>
+            <a class="signin-button" role="button">Sign in</a>
         </div>
     </header>
 
