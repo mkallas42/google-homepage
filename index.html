@@ -128,6 +128,7 @@ text-decoration: underline;
 .search-buttons-container {
     display: flex;
     margin: 0 auto;
+    justify-content: center;
 
 }
 
@@ -147,6 +148,43 @@ cursor: pointer;
 user-select: none;
 align-items: flex-start;
 box-sizing: border-box;
+
+}
+
+.search-buttons:hover {
+    box-shadow: 0 1px 4px white;
+}
+
+.languages {
+    margin: 15px;
+    text-align: center;
+    color: white;
+    line-height: 28px;
+    font-size: small;
+    padding: 0 3px;
+}
+
+.est-rus {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: lightgray;
+    visibility: visible;
+    line-height: 40px;
+    min-width: 980px;
+    border-top: 1px solid #e4e4e4;
+}
+
+#Estonia{
+font-size: 15px;
+text-align: left;
+color: rgba(0,0,0,.54)
 
 }
 
@@ -179,22 +217,25 @@ box-sizing: border-box;
     <input class="search-buttons" type="submit" value="I'm Feeling Lucky">
 </div>
 
-<p>Google offered in: <a href="">eesti</a><a href="">русский</a></p>
+<div class="languages">Google offered in:  
+    <a class="est-rus" href="">eesti</a>
+    <a class="est-rus" href="">русский</a>
+</div>
 
 <footer>
-    <p>Estonia</p><br>
-    <div>
+    <div id="Estonia"><a>Estonia</a></div><br>
+    <nav>
         <a href="">Advertising</a>
         <a href="">Business</a>
         <a href="">About</a>
         <a href="">How Search Works</a>
-    </div>
+    </nav>
 
-    <div>
+    <nav>
         <a href="">Privacy</a>
         <a href="">Terms</a>
         <a href="">Settings</a>
-    </div>
+    </nav>
 </footer>
 
 </body>
