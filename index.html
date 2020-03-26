@@ -6,10 +6,16 @@
     <title>Google Homepage</title>
 
 <style>
+
+html {
+    height: 95%;
+}
+
 body {
 font-family: arial,sans-serif;
 background-image: -webkit-radial-gradient(circle,  #0072ce, black, white);
 background-repeat: no-repeat;
+height: 95%;
 }
 
 .gmail-link, .images-link {
@@ -175,17 +181,40 @@ footer {
     left: 0;
     right: 0;
     background: lightgray;
-    visibility: visible;
     line-height: 40px;
     min-width: 980px;
-    border-top: 1px solid #e4e4e4;
+    border-top: 1px solid #f2f2f2;
 }
 
-#Estonia{
-font-size: 15px;
-text-align: left;
-color: rgba(0,0,0,.54)
+#estonia-text {
+    font-size: 15px;
+}
 
+.Estonia{
+    float: left;
+    color: rgba(0,0,0,.54);
+    margin-left: 25px;
+}
+
+.footer-left {
+    float: left;
+    margin-left: 25px;
+}
+
+.footer-right {
+    float: right;
+    margin-right: 25px;
+}
+
+.footer-items {
+    text-decoration: none;
+    padding-left: 25px;
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-items:hover {
+    text-decoration: underline;
 }
 
 </style>
@@ -223,19 +252,22 @@ color: rgba(0,0,0,.54)
 </div>
 
 <footer>
-    <div id="Estonia"><a>Estonia</a></div><br>
-    <nav>
-        <a href="">Advertising</a>
-        <a href="">Business</a>
-        <a href="">About</a>
-        <a href="">How Search Works</a>
+    <div class="Estonia"><a id="estonia-text" class="footer-items" href="https://en.wikipedia.org/wiki/Estonia">Estonia</a></div><br>
+    <nav class="footer-left">
+        <a class="footer-items" href="">Advertising</a>
+        <a class="footer-items" href="">Business</a>
+        <a class="footer-items" href="">About</a>
+        <a class="footer-items" href="">How Search Works</a>
     </nav>
+</div>
 
-    <nav>
-        <a href="">Privacy</a>
-        <a href="">Terms</a>
-        <a href="">Settings</a>
+    <div>
+    <nav class="footer-right">
+        <a class="footer-items" href="">Privacy</a>
+        <a class="footer-items" href="">Terms</a>
+        <a class="footer-items" href="">Settings</a>
     </nav>
+</div>
 </footer>
 
 </body>
